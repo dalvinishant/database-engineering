@@ -87,7 +87,7 @@ insert into grades_parts select * from grades_org;
 
 -- Note that sequence of creation of partition (i.e. partitioning then inserting or vice versa) does not matter
 -- Since partitions are created as part of alter command, DBMS creates partitions and inserts relevant rows in those partitions
--- by creating a temp copy of original table then insert alter and then insert into partitions
+-- by creating a temp copy of original table then alter and then insert into partitions
 
 -- Creating Index on grades_parts table
 create index index_on_g on grades_parts;

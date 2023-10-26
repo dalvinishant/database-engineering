@@ -14,9 +14,9 @@
 
 #### IO
 
-- An IO is an operation is a Read request to the disk
-- IO can fetch 1 page or more depending on the disk partitions
-- An IO cannot read a single row, its a page with many in them, you get them for free
+- An IO is an operation, its a Read request to the disk
+- IO can fetch 1 or more pages depending on the disk partitions
+- An IO cannot read a single row, its a page with many rows in them, you get them for free
 - IOs are expensive, have as minimum as possible
 - Some IOs in operating systems goes to OS cache and not disk
 
@@ -25,7 +25,7 @@
 #### Heap
 
 - Heap as a data structure is used to store pages one after another for table
-- This is where actual data is stored including everything
+- This is where actual data is stored including everything(i.e metadata + rows)
 - Traversing heap is expensive
 
 #### Index
@@ -38,7 +38,7 @@
 - Index is also stored in pages and cost IO to pull entries of the index
 - Smaller the index, the more it can fit in memory the faster the search
 - Sometimes the heap can be organized around a single index (which is also called clustered index or an Index Organized Table[IOT])
-- MySQL InnoDB always have a primary key(clustered index) order indexes point to the primary key "value"
+- MySQL InnoDB always have a primary key(clustered index) order indexes pointing to primary key "value"
 - Postgres only have secondary indexes and all indexes point directly to the row_id which lives in the heap
 - Any Update, all the keys get updated in IOT
 

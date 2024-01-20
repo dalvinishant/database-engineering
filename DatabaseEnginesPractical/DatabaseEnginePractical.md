@@ -1,7 +1,7 @@
 - Create a docker container for mysql
 	- docker run --name ms -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root mysql
 		- Change the host port if already in use
-
+	- docker exec -it ms bash
 - Run Following commands
 ```
 mysql> create database test;

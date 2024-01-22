@@ -20,7 +20,8 @@ Index
 16.	[DatabaseReplication](../main/DatabaseReplication.md)
 17.	[DatabaseReplicationPractical](../main/DatabaseReplicationPractical.md)
 18. [DatabaseEngine](../main/DatabaseEngines.md)
-18. [DatabaseEnginePractical](../main/DatabaseEnginesPractical)
-
+19. [DatabaseEnginePractical](../main/DatabaseEnginesPractical)
+20. [DatabaseCursors](../main/DatabaseCursors.md)
+21. [DatabaseCursorsPractical](../main/DatabaseCursorsPractical)
 
 -------------------------

@@ -27,7 +27,6 @@ python3 run insert1mil.py
 	- ```
 		python3 run servercursor.py
 	```
-
 - For Client Side cursor
 	- Execute
 	- ```
